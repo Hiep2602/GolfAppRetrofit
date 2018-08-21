@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    card_view:cardCornerRadius="5dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_sangolf"
+                android:paddingTop="20dp"
+                android:textSize="14sp"
+                android:textColor="#03A9F4"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_golfresort"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:textColor="#03A9F4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:src="@drawable/bg_login"
+            android:id="@+id/imv_itemlogin"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imv_search"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/search_course_btn" />
+
+                <ImageView
+                    android:id="@+id/imv_s"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="140dp"
+                    android:src="@drawable/discovery_tabbar_s_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/item"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_create"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CREATE YOUR GAME"
+                        android:textColor="#FAFAFA"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_rounds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_create"
+                        android:text="YOUR ROUNDS,YOUR RULES"
+                        android:textColor="#FAFAFA"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/imv_cong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/create_game_plus_icon" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#EEEEEE"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/tv_most"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Most Popular Course"
+                android:textColor="#424242"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_view"
+                android:layout_width="100dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button"
+                android:text="view all" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ProgressBar android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:progressTint="@android:color/black"
+                android:id="@+id/progressbar"
+                android:padding="@dimen/_120sdp"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>
